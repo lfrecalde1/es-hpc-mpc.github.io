@@ -6,7 +6,7 @@
         content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
   <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bootstrapping Vision Flight</title>
+  <title>HPA-MPC: Hybrid Perception-Aware NMPC for Quadrotors with Suspended Loads</title>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
@@ -100,9 +100,9 @@
             <span class="author-block" style="font-size: 1.1em;">
               <a href="https://mrunaljsarvaiya.github.io/">Mrunal Sarvaiya</a>,</span>
             <span class="author-block"  style="font-size: 1.1em;">
-              <a href="">Guanrui Li</a>,
+              <a href="https://lguanrui.github.io/">Guanrui Li</a>,
             <span class="author-block" style="font-size: 1.0em;">
-              <a href="">Giuseppe Loianno</a>,
+              <a href="https://wp.nyu.edu/arpl/">Giuseppe Loianno</a>,
             </span>
           </div>
 
@@ -158,12 +158,35 @@
   </div>
 </section>
 
+<section class="section gray-background">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Quadrotors equipped with cable-suspended loads represent a versatile, low-cost, and energy efficient solution for aerial transportation, construction, and manipulation tasks.
+            However, their real-world deployment is hindered by several challenges. The system is difficult to control because it is nonlinear, underactuated, involves hybrid dynamics due to slack-taut cable modes, and evolves on complex configuration spaces. Additionally, it is crucial to estimate the full state and the cable's mode transitions in real-time using on-board sensors and computation. 
+            </p>
+            <p>
+            To address these challenges, we present a novel Hybrid Perception-Aware Nonlinear Model Predictive Control (HPA-MPC) control approach for quadrotors with suspended loads. Our method considers the complete hybrid system dynamics and includes a perception-aware cost to ensure the payload remains visible in the robot's camera during navigation. Furthermore, the full state and hybrid dynamics' transitions are estimated using onboard sensors.
+            Experimental results demonstrate that our approach enables stable load tracking control, even during slack-taut transitions, and operates entirely onboard. The experiments also show that the perception-aware term effectively keeps the payload in the robot's camera field of view when a human operator interacts with the load. 
+          
+          </p>
+        </div>
+      </div>
+    </div>
+    <!--/ Abstract. -->
+  </div>
+</section>
+
 <section class="hero is-light is-small">
   <div class="hero-body">
     <div class="container">
       <div class="columns is-centered has-text-centered">
         <div class="column is-four-fifths">
-          <h2 class="title is-3">Real World Experiments</h2>
+          <h2 class="title is-3">Architecture and Real World Experiments</h2>
           <p class="has-text-centered mb-4">
 	  <p class="has-text-centered mb-4">
 	  <p class="has-text-centered mb-4">
@@ -200,31 +223,9 @@
 <!--   </div> -->
 <!-- </section> -->
 
-<section class="section gray-background">
-  <div class="container is-max-desktop">
-    <!-- Abstract. -->
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <p>
-            Quadrotors equipped with cable-suspended loads represent a versatile, low-cost, and energy efficient solution for aerial transportation, construction, and manipulation tasks.
-            However, their real-world deployment is hindered by several challenges. The system is difficult to control because it is nonlinear, underactuated, involves hybrid dynamics due to slack-taut cable modes, and evolves on complex configuration spaces. Additionally, it is crucial to estimate the full state and the cable's mode transitions in real-time using on-board sensors and computation. 
-            </p>
-            <p>
-            To address these challenges, we present a novel Hybrid Perception-Aware Nonlinear Model Predictive Control (HPA-MPC) control approach for quadrotors with suspended loads. Our method considers the complete hybrid system dynamics and includes a perception-aware cost to ensure the payload remains visible in the robot's camera during navigation. Furthermore, the full state and hybrid dynamics' transitions are estimated using onboard sensors.
-            Experimental results demonstrate that our approach enables stable load tracking control, even during slack-taut transitions, and operates entirely onboard. The experiments also show that the perception-aware term effectively keeps the payload in the robot's camera field of view when a human operator interacts with the load. 
-          
-          </p>
-        </div>
-      </div>
-    </div>
-    <!--/ Abstract. -->
-  </div>
-</section>
 
 
-<section class="section">
+<!-- <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
       <div class="column">
@@ -235,8 +236,8 @@
         </h2>
     </div>
   </div>
-</section>
-
+</section> -->
+<!-- 
 <section class="section">
   <div class="container is-max-desktop">
     <div class="columns is-centered has-text-centered">
@@ -248,7 +249,7 @@
         </h2>
     </div>
   </div>
-</section>
+</section> -->
 
 
 <!--     <div class="container"> -->
