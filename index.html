@@ -162,13 +162,11 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Quadrotors equipped with cable-suspended loads represent a versatile, low-cost, and energy efficient solution for aerial transportation, construction, and manipulation tasks.
-            However, their real-world deployment is hindered by several challenges. The system is difficult to control because it is nonlinear, underactuated, involves hybrid dynamics due to slack-taut cable modes, and evolves on complex configuration spaces. Additionally, it is crucial to estimate the full state and the cable's mode transitions in real-time using on-board sensors and computation. 
-            </p>
+          Aerial transportation using quadrotors with cable-suspended payloads holds great potential for applications in disaster response, logistics, and infrastructure maintenance. However, their hybrid and underactuated dynamics pose significant control and perception challenges.
+Traditional approaches often assume a taut cable condition, limiting their effectiveness in real-world applications where slack-to-taut transitions occur due to disturbances. We introduce ES-HPC-MPC, a model predictive control framework that enforces exponential stability and perception-constrained control under hybrid dynamics. 
+	  </p>
             <p>
-            To address these challenges, we present a novel Hybrid Perception-Aware Nonlinear Model Predictive Control (HPA-MPC) control approach for quadrotors with suspended loads. Our method considers the complete hybrid system dynamics and includes a perception-aware cost to ensure the payload remains visible in the robot's camera during navigation. Furthermore, the full state and hybrid dynamics' transitions are estimated using onboard sensors.
-            Experimental results demonstrate that our approach enables stable load tracking control, even during slack-taut transitions, and operates entirely onboard. The experiments also show that the perception-aware term effectively keeps the payload in the robot's camera field of view when a human operator interacts with the load. 
-          
+Our method leverages Exponentially Stabilizing Control Lyapunov Functions (ES-CLFs) to enforce stability during the tasks and Control Barrier Functions (CBFs) to maintain the payload within the onboard camera’s field of view (FoV). We validate our method through both simulation and real-world experiments, demonstrating stable trajectory tracking and reliable payload perception. We validate that our method maintains stability and satisfies perception constraints while tracking dynamically infeasible trajectories and when the system is subjected to hybrid mode transitions caused by unexpected disturbances. 
           </p>
         </div>
       </div>
